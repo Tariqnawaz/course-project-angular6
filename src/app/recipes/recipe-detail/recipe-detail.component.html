@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="col-xs-12">
+      <img [src]="recipeObj.imagePath" alt="{{ recipeObj.name }}" class="img-responsive" style="max-height: 300px;">
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{ recipeObj.name }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="btn-group">
+      <button
+        type="button"
+        class="btn btn-primary dropdown-toggle">
+        Manage Recipe <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">To Shopping List</a></li>
+        <li><a href="#">Edit Recipe</a></li>
+        <li><a href="#">Delete Recipe</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+      {{ recipeObj.description }}
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    Ingredients
+  </div>
+</div>
+
+<!-- <div class="row">
+  <div class="col-xs-12">
+      <div class="pull-left">
+          <h4 class="list-group-item-heading">{{ recipeObj.name }}</h4>
+          <p class="list-group-item-text">{{ recipeObj.description }}</p>
+        </div>
+        <span class="pull-right">
+          <img [src]="recipeObj.imagePath" alt="{{ recipeObj.name }}" class="img-responsive" style="max-height: 50px;">
+        </span>
+     
+  </div>
+</div> -->
